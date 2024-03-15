@@ -1,13 +1,75 @@
 const Pricing = () => {
   return (
-    <div className="">
-     
-<div className="card2">
-    <p>Free</p>
-    <p>$0 <span>p/month</span></p>
-    <p>Get started with our Free Plan for individuals and small projects</p>
-</div>
-     
+    <div className="lg:px-[100px] flex lg:flex-row flex-col gap-3">
+      <div className="card2 bg-white">
+        <p className="text-[20px]">Free</p>
+        <p className="text-[50px] font-bold">
+          $0 <span className="text-[14px] font-normal">p/month</span>
+        </p>
+        <p className="paragraphs pb-2">
+          Get started with our Free Plan for individuals and small projects
+        </p>
+
+        <div className="try-btn">
+          <p className="text-[17px]">Try out now</p>
+        </div>
+
+        <div className="card2-list">
+          <p>Limited access to core features</p>
+          <p>Suitable for small-scale usage</p>
+          <p>Basic customer support</p>
+          <p>Ad-supported experience</p>
+          <p>One request at a time</p>
+        </div>
+      </div>
+
+
+      <div className="card2 bg-black">
+        <p className="text-[20px] text-[#5f5f5f]">Free</p>
+        <p className="text-[50px] text-white font-bold">
+        $2900 <span className="text-[14px] font-normal">p/month</span>
+        </p>
+        <p className="paragraphs pt-2 pb-3">
+        Unlock the full potential of our platform with the Standard Plan
+        </p>
+
+        <div className="try-btn2 text-white">
+          <p className="text-[17px]">Try out now</p>
+        </div>
+
+        <div className="card2-list text-white">
+          <p>Full access to all core features</p>
+          <p>Ideal for growing businesses</p>
+          <p>Priority customer support</p>
+          <p>Ad-free experience</p>
+          <p>Regular updates and improvements</p>
+        </div>
+      </div>
+
+
+
+
+      <div className="card2 bg-white">
+        <p className="text-[20px]">Free</p>
+        <p className="text-[50px] font-bold">
+          $0 <span className="text-[14px] font-normal">p/month</span>
+        </p>
+        <p className="paragraphs pt-2 pb-3">
+          Get started with our Free Plan for individuals and small projects
+        </p>
+
+        <div className="try-btn">
+          <p className="text-[17px]">Try out now</p>
+        </div>
+
+        <div className="card2-list">
+          <p>Solutions for large enterprises</p>
+          <p>Features and customization options</p>
+          <p>Dedicated account manager</p>
+          <p>24/7 premium customer support</p>
+          <p>Comprehensive training and onboarding</p>
+        </div>
+      </div>
     </div>
   );
 };
