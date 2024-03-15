@@ -1,7 +1,11 @@
 import Image from "next/image";
 import items from "./components/Workdata";
+import Pricing from "./components/pricing/pricing";
 export default function Home() {
   return (
+    <div>
+
+ 
     <main className=" ">
       <div className="lg:px-[86px] text-center">
         <div className="leading-tight font-extrabold text-[6.8rem]">
@@ -104,40 +108,45 @@ export default function Home() {
 
             <div className="bg-[#0000ff]  card flex flex-col justify-center text-center">
               <img src="image/card1.webp" alt="" />
-              <p className="text-[30px] !text-white ">Automated Prospect Discovery</p>
+              <p className="text-[30px] !text-white ">
+                Automated Prospect Discovery
+              </p>
               <p className="paragraphs !text-white ">
-              Quickly identify potential clients with advanced AI algorithms, saving time and effort.
+                Quickly identify potential clients with advanced AI algorithms,
+                saving time and effort.
               </p>
             </div>
           </div>
-
 
           <div>
-          <div className="flex md:flex-row py-5 gap-3 flex-col">
-            <div className="bg-white card flex flex-col justify-center text-center">
-              <img src="image/card1.webp" alt="" />
-              <p className="text-[30px] text-black ">Smart Scheduling</p>
-              <p className="paragraphs">
-              Optimize outreach timing based on prospect time zones, ensuring your messages reach the right audience.
-              </p>
-            </div>
+            <div className="flex md:flex-row py-5 gap-3 flex-col">
+              <div className="bg-white card flex flex-col justify-center text-center">
+                <img src="image/card1.webp" alt="" />
+                <p className="text-[30px] text-black ">Smart Scheduling</p>
+                <p className="paragraphs">
+                  Optimize outreach timing based on prospect time zones,
+                  ensuring your messages reach the right audience.
+                </p>
+              </div>
 
-            <div className="bg-white text-white card flex flex-col justify-center text-center">
-              <img src="image/card1.webp" alt="" />
-              <p className="text-[30px] text-black ">A/B Testing</p>
-              <p className="paragraphs">
-              Maximizing response rates by identifying the most effective message variations.
-              </p>
-            </div>
+              <div className="bg-white text-white card flex flex-col justify-center text-center">
+                <img src="image/card1.webp" alt="" />
+                <p className="text-[30px] text-black ">A/B Testing</p>
+                <p className="paragraphs">
+                  Maximizing response rates by identifying the most effective
+                  message variations.
+                </p>
+              </div>
 
-            <div className="bg-white text-white card flex flex-col justify-center text-center">
-              <img src="image/card1.webp" alt="" />
-              <p className="text-[30px] text-black">Real-time Analytics</p>
-              <p className="paragraphs">
-              Track the success of your campaigns with real-time analytics, gaining valuable insights into open rates.
-              </p>
+              <div className="bg-white text-white card flex flex-col justify-center text-center">
+                <img src="image/card1.webp" alt="" />
+                <p className="text-[30px] text-black">Real-time Analytics</p>
+                <p className="paragraphs">
+                  Track the success of your campaigns with real-time analytics,
+                  gaining valuable insights into open rates.
+                </p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -145,26 +154,47 @@ export default function Home() {
       <div className=" py-[120px]">
         <div className="flex text-center items-center justify-center ">
           <div className="lg:w-[40%]  ">
-          <p className="text-[3.5rem] font-extrabold leading-tight">INTEGRATE <span className="text-[#5f5f5f]">YOUR </span> 
-FAVORITE TOOLS</p>
-<p className="paragraphs">Streamline your workflow and maximize efficiency by seamlessly integrating your favorite tools.</p>
+            <p className="text-[3.5rem] font-extrabold leading-tight">
+              INTEGRATE <span className="text-[#5f5f5f]">YOUR </span>
+              FAVORITE TOOLS
+            </p>
+            <p className="paragraphs">
+              Streamline your workflow and maximize efficiency by seamlessly
+              integrating your favorite tools.
+            </p>
           </div>
-
         </div>
-       
       </div>
 
-
-      <div>
-
+      <div className="lg:px-[40px]">
         <div className="bg-black rounded-[5rem] text-white lg:py-[90px] lg:px-[65px]">
-<div>
-  <p className="text-[3.5rem] font-extrabold uppercase leading-tight">frequently asked questions</p>
-  <p>Explore our FAQ section to find answers to commonly asked questions about our platform.</p>
-</div>
-
+          <div>
+            <p className="text-[3.5rem] font-extrabold uppercase leading-tight">
+              frequently <span className="text-orange">asked</span> questions
+            </p>
+            <p>
+              Explore our FAQ section to find answers to commonly asked
+              questions about our platform.
+            </p>
+          </div>
         </div>
       </div>
     </main>
+
+    <div>
+    <div className="flex pb-[70px] pt-[120px] text-center items-center justify-center ">
+        <div className="lg:w-[60%]  ">
+          <p className="text-[3.5rem] uppercase font-extrabold ">
+            Flexible Pricing Options
+          </p>
+          <p className="paragraphs">
+            Navigate through our pricing section to discover the ideal
+            subscription plan tailored to your needs.
+          </p>
+        </div>
+      </div>
+      <Pricing/>
+    </div>
+    </div>
   );
 }
