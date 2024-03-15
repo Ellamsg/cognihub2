@@ -1,112 +1,169 @@
 import Image from "next/image";
-
+import items from "./components/Workdata";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className=" ">
+      <div className="lg:px-[86px] text-center">
+        <div className="leading-tight font-extrabold text-[6.8rem]">
+          <h1 className=" uppercase">From</h1>
+          <h1 className=" uppercase">
+            <span> Finding</span> Prospects to Converting Them into{" "}
+            <span>Paying </span> Customers
+          </h1>
+        </div>
+        <div className="flex justify-center">
+          <div className="w-[60%] text-[20px]">
+            <p>
+              Empower your business with OutreachAI, the all-in-one solution
+              handling prospect discovery to customer conversion. Say goodbye to
+              outreach complexities; let AI streamline your journey to success.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="flex lg:flex-row text-center flex-col py-5 justify-between md:px-[100px] gap-[76px]">
+        <div>
+          <img alt="image1" src="" />
+          <p className="text-[30px] lights">Real-Time Data</p>
+          <p className="text-[18px]">
+            Provide users with a comprehensive dashboard powered by AI-generated
+            insights.
+          </p>
+        </div>
+        <div>
+          <img alt="image1" src="" />
+          <p className="text-[30px] lights">Smart User Predictions</p>
+          <p className="text-[18px]">
+            Develop AI models that predict the potential success of email
+            campaigns for specific user segments.
+          </p>
+        </div>
+        <div>
+          <img alt="image1" src="" />
+          <p className="text-[30px] lights">Smart Scheduling</p>
+          <p className="text-[18px]">
+            Utilize AI-driven algorithms to determine the optimal timing for
+            sending emails based on recipient behavior patterns.
+          </p>
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      <div className="lg:px-[40px]">
+        <div className="bg-black rounded-[5rem] text-white lg:py-[90px] lg:px-[65px]">
+          <p className="text-[3.8rem] font-extra-bold pb-4 text-left uppercase">
+            How it <span className="text-orange">works?</span>
           </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="grid  gap-2 md:grid grid-cols-1 lg:grid-cols-3">
+            {items.map((item) => (
+              <div
+                key={item.id}
+                className="bg-[#181818] rounded-4xl p-4 flex flex-col justify-start"
+              >
+                <img className="pb-4" alt="image" src={item.image} />
+                <p className="text-[30px] pb-3 w-[82%] leading-tight">
+                  {item.p}
+                </p>
+                <p className=" text-[#9c9a9a] text-[17px]">{item.p2}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <div>
+        <div className="text-center  py-[120px]">
+          <div className="">
+            <p className="uppercase font-extrabold  text-[3.5rem]">
+              Discover OUr Feature Set
+            </p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+            <div className="flex flex-col items-center justify-center">
+              <div className="w-[60%] ">
+                <p className="text-[20px]  ">
+                  Explore the rich array of features that empower our platform
+                  to meet your unique needs. From essential functionalities to
+                  advanced capabilities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:px-[100px] px-[20px] md:px-[40px]">
+          <div className="flex md:flex-row gap-3 flex-col">
+            <div className="bg-[white] card flex flex-col justify-center text-center">
+              <img src="image/card1.webp" alt="" />
+              <p className="text-[30px] ">Personalized Messaging</p>
+              <p className="paragraphs">
+                Craft compelling messages tailored to each prospect's profile,
+                increasing engagement with personalized communication.
+              </p>
+            </div>
+
+            <div className="bg-[#0000ff]  card flex flex-col justify-center text-center">
+              <img src="image/card1.webp" alt="" />
+              <p className="text-[30px] !text-white ">Automated Prospect Discovery</p>
+              <p className="paragraphs !text-white ">
+              Quickly identify potential clients with advanced AI algorithms, saving time and effort.
+              </p>
+            </div>
+          </div>
+
+
+          <div>
+          <div className="flex md:flex-row py-5 gap-3 flex-col">
+            <div className="bg-white card flex flex-col justify-center text-center">
+              <img src="image/card1.webp" alt="" />
+              <p className="text-[30px] text-black ">Smart Scheduling</p>
+              <p className="paragraphs">
+              Optimize outreach timing based on prospect time zones, ensuring your messages reach the right audience.
+              </p>
+            </div>
+
+            <div className="bg-white text-white card flex flex-col justify-center text-center">
+              <img src="image/card1.webp" alt="" />
+              <p className="text-[30px] text-black ">A/B Testing</p>
+              <p className="paragraphs">
+              Maximizing response rates by identifying the most effective message variations.
+              </p>
+            </div>
+
+            <div className="bg-white text-white card flex flex-col justify-center text-center">
+              <img src="image/card1.webp" alt="" />
+              <p className="text-[30px] text-black">Real-time Analytics</p>
+              <p className="paragraphs">
+              Track the success of your campaigns with real-time analytics, gaining valuable insights into open rates.
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div className=" py-[120px]">
+        <div className="flex text-center items-center justify-center ">
+          <div className="lg:w-[40%]  ">
+          <p className="text-[3.5rem] font-extrabold leading-tight">INTEGRATE <span className="text-[#5f5f5f]">YOUR </span> 
+FAVORITE TOOLS</p>
+<p className="paragraphs">Streamline your workflow and maximize efficiency by seamlessly integrating your favorite tools.</p>
+          </div>
+
+        </div>
+       
+      </div>
+
+
+      <div>
+
+        <div className="bg-black rounded-[5rem] text-white lg:py-[90px] lg:px-[65px]">
+<div>
+  <p className="text-[3.5rem] font-extrabold uppercase leading-tight">frequently asked questions</p>
+  <p>Explore our FAQ section to find answers to commonly asked questions about our platform.</p>
+</div>
+
+        </div>
       </div>
     </main>
   );
