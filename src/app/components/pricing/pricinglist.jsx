@@ -1,9 +1,9 @@
-const Pricing = () => {
+const Pricinglist = () => {
   return (
     <div className="lg:px-[100px] flex lg:flex-row flex-col gap-3">
       <div className="card2 bg-white">
         <p className="text-[20px]">Free</p>
-        <p className="text-[50px] font-bold">
+        <p className="md:text-[50px] text-[40px] font-bold">
           $0 <span className="text-[14px] font-normal">p/month</span>
         </p>
         <p className="paragraphs pb-2">
@@ -26,7 +26,7 @@ const Pricing = () => {
 
       <div className="card2 bg-black">
         <p className="text-[20px] text-[#5f5f5f]">Free</p>
-        <p className="text-[50px] text-white font-bold">
+        <p className="md:text-[50px] text-[40px] text-white font-bold">
         $2900 <span className="text-[14px] font-normal">p/month</span>
         </p>
         <p className="paragraphs pt-2 pb-3">
@@ -51,7 +51,7 @@ const Pricing = () => {
 
       <div className="card2 bg-white">
         <p className="text-[20px]">Free</p>
-        <p className="text-[50px] font-bold">
+        <p className="md:text-[50px] text-[40px] font-bold">
           $0 <span className="text-[14px] font-normal">p/month</span>
         </p>
         <p className="paragraphs pt-2 pb-3">
@@ -62,7 +62,7 @@ const Pricing = () => {
           <p className="text-[17px]">Try out now</p>
         </div>
 
-        <div className="card2-list">
+        <div className="card2-list ">
           <p>Solutions for large enterprises</p>
           <p>Features and customization options</p>
           <p>Dedicated account manager</p>
@@ -74,4 +74,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Pricinglist;
