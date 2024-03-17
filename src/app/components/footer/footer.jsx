@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="lg:px-[100px] px-[30px] lg:pt-[100px]">
+    <div className="lg:px-[100px] bg-[#f2f1f1] px-[30px] lg:pt-[100px]">
 
       <div className="bg-[blue] my-6 rounded-[1.2rem] md:rounded-[2.5rem] ">
         <p className="md:text-[3rem] text-[1.5rem] text-white p-4 ">Get early access</p>

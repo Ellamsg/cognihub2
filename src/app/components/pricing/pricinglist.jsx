@@ -6,12 +6,13 @@ const Pricinglist = () => {
         <p className="md:text-[50px] text-[40px] font-bold">
           $0 <span className="text-[14px] font-normal">p/month</span>
         </p>
-        <p className="paragraphs pb-2">
+        <p className="paragraphs pt-2 pb-3">
           Get started with our Free Plan for individuals and small projects
         </p>
 
         <div className="try-btn">
-          <p className="text-[17px]">Try out now</p>
+          <p className="text-[15px] font-bold">Try out now</p>
+          <img className="size-[30px]" src="icon/arrow.png" />
         </div>
 
         <div className="card2-list">
@@ -34,7 +35,8 @@ const Pricinglist = () => {
         </p>
 
         <div className="try-btn2 text-white">
-          <p className="text-[17px]">Try out now</p>
+          <p className="text-[15px] font-bold">Try out now</p>
+          <img className="size-[30px]" src="icon/arrow2.png" />
         </div>
 
         <div className="card2-list text-white">
@@ -59,7 +61,8 @@ const Pricinglist = () => {
         </p>
 
         <div className="try-btn">
-          <p className="text-[17px]">Try out now</p>
+          <p className="text-[15px] font-bold">Try out now</p>
+          <img className="size-[30px]" src="icon/arrow.png" />
         </div>
 
         <div className="card2-list ">

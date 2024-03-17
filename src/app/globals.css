@@ -23,6 +23,13 @@
 }
 
 
+.paragraphs3{
+
+  @apply text-[#5f5f5f] text-[14px] lg:text-[16px] md:text-[15px] font-medium 
+}
+
+
+
 .card{
 
   @apply rounded-[1.3rem] md:rounded-[2.5rem] pb-5 py-3 px-[32px] md:px-[24px]
@@ -39,12 +46,12 @@
 
 .try-btn{
 
-  @apply border-2 w-[50%] rounded-4xl px-3 border-black py-[12px];
+  @apply flex justify-center items-center border-2 w-[50%] rounded-4xl px-3 border-black py-[12px];
 }
 
 .try-btn2{
 
-  @apply  w-[50%] rounded-4xl px-3 bg-orange  py-[12px];
+  @apply flex items-center justify-between  w-[50%] rounded-4xl px-3 bg-orange  py-[12px];
 }
 
 .footer-divs{
@@ -157,4 +164,8 @@
 /* for testing purposed to ensure the animation lined up correctly */
 .test {
   background: red !important;
+}
+.move img{
+
+  @apply size-[70px]
 }

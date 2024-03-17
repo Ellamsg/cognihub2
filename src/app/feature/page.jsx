@@ -1,4 +1,5 @@
 import items from "../components/Workdata";
+import Scroll from "../components/scroll/scroll";
 
 const Page = () => {
   return (
@@ -61,19 +62,19 @@ const Page = () => {
           </p>
 
           <div className="grid  gap-2 md:grid grid-cols-1 lg:grid-cols-3">
-            {items.map((item) => (
-              <div
-                key={item.id}
-                className="bg-[#181818] rounded-[22px] md:rounded-4xl p-4 flex flex-col justify-start"
-              >
-                <img className="pb-4" alt="image" src={item.image} />
-                <p className="md:text-[30px] text-[18px] pb-3 w-[82%] leading-tight">
-                  {item.p}
-                </p>
-                <p className=" text-[#9c9a9a] paragraphs">{item.p2}</p>
-              </div>
-            ))}
-          </div>
+              {items.map((item) => (
+                <div
+                  key={item.id}
+                  className="bg-[#181818] rounded-[22px] md:rounded-4xl p-4 flex flex-col justify-start"
+                >
+                  <img className="pb-4 h-[60px] w-[35px]" alt="image" src={item.image} />
+                  <p className="md:text-[30px] text-[18px] pb-3 w-[82%] leading-tight">
+                    {item.p}
+                  </p>
+                  <p className=" text-[#9c9a9a] paragraphs">{item.p2}</p>
+                </div>
+              ))}
+            </div>
         </div>
       </div>
 
@@ -164,6 +165,7 @@ const Page = () => {
             </p>
           </div>
         </div>
+        <Scroll/>
       </div>
     </div>
   );

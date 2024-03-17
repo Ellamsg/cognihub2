@@ -6,6 +6,7 @@ import items from "./components/Workdata";
 import FAQ from "./components/faq";
 import Pricinglist from "./components/pricing/pricinglist";
 import Scroll from "./components/scroll/scroll";
+import Testimonial from "./components/testimonials/testimonial";
 
 
 export default function Home() {
@@ -40,7 +41,7 @@ export default function Home() {
 
           <div className=" flex  py-6 px-[30px] md:px-0 justify-center">
           <video
-              className="rounded-[3rem]"
+              className="lg:rounded-[3rem] rounded-[1.4rem]"
               src="video/cognihub.mp4"
               poster="/images/mock13.jpg"
               autoPlay
@@ -271,6 +272,8 @@ export default function Home() {
           <Pricinglist />
         </div>
       </div>
+
+      <Testimonial/>
     </div>
   );
 }
