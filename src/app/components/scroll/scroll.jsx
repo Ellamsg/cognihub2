@@ -40,7 +40,7 @@ export default function Scroll() {
     <div className=" flex flex-col justify-center items-center justify-items-center">
       
 
-      <div className="scroller lg:w-[40%]" data-speed="fast">
+      <div className="scroller w-[100%] lg:w-[40%]" data-speed="fast">
         <ul className="tag-list scroller__inner">
         <img src="https://i.pravatar.cc/150?img=1" alt="" />
           <img src="https://i.pravatar.cc/150?img=2" alt="" />
@@ -51,7 +51,7 @@ export default function Scroll() {
         </ul>
       </div>
 
-      <div className="scroller lg:w-[40%]" data-direction="right" data-speed="slow">
+      <div className="scroller w-[100%] lg:w-[40%]" data-direction="right" data-speed="slow">
         <div className="scroller__inner">
           <img src="https://i.pravatar.cc/150?img=1" alt="" />
           <img src="https://i.pravatar.cc/150?img=2" alt="" />

@@ -48,7 +48,7 @@
 }
 
 .footer-divs{
-   @apply  flex justify-center text-center md:text-start font-semibold flex-col gap-2 text-[15px]
+   @apply  flex justify-center text-center lg:text-start font-semibold flex-col gap-2 text-[15px]
 }
 
 .footer-btn{
