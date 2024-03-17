@@ -8,7 +8,10 @@ const Footer = () => {
 
       <div className="flex  justify-center md:justify-start lg:flex-row flex-col py-5">
         <div className="lg:w-[50%] md:pb-0 pb-4">
-          <img src="" alt="img" />
+          <div className="flex lg:justify-start justify-center">
+          <img className="size-[70px] mb-2" src="icon/eye.png" alt="img" />
+          </div>
+          
           <div className="flex md:justify-start justify-center">
           <p className="md:text-start text-center paragraphs w-[30%]">© 2023 CogniHub, Inc. All rights reserved</p>
           </div>
@@ -30,10 +33,10 @@ const Footer = () => {
             <p>Help</p>
           </div>
           <div className="footer-divs md:pb-0 pb-6 ">
-            <p className="footer-btn"> Twitter</p>
-            <p className="footer-btn">Facebook</p>
-            <p className="footer-btn">Youtube</p>
-            <p className="footer-btn">Instagram</p>
+         <div className="footer-btn"><p > Twitter</p></div>   
+         <div className="footer-btn"><p >Facebook</p></div>   
+          <div className="footer-btn"><p >Youtube</p></div>  
+          <div className="footer-btn"><p >Instagram</p></div>  
           </div>
         </div>
       </div>

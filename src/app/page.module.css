@@ -1,0 +1,30 @@
+.sliderContainer {
+    position: relative; /* Change from absolute to relative */
+    width: 100%;
+    background-color: red;
+    overflow: hidden; /* Add overflow property to hide overflow content */
+  }
+  
+  .slider {
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    background-color: green;
+  }
+  
+  
+  .slider .txt {
+    position: relative;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    padding-right: 50px;
+  }
+
+  
+  .slider .txt:nth-of-type(2){
+    position: absolute;
+    left: 100%;
+    top: 0;
+   
+  }

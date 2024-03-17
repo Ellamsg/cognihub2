@@ -1,11 +1,19 @@
+
+"use client"
+
 import Image from "next/image";
 import items from "./components/Workdata";
 import FAQ from "./components/faq";
 import Pricinglist from "./components/pricing/pricinglist";
+import Scroll from "./components/scroll/scroll";
+
+
 export default function Home() {
+
+  
   return (
     <div>
-      <main className="  ">
+      <div className="  ">
         <div className="relative  pt-5  text-center">
 
           <div className=" lg:px-[86px] px-[30px] leading-tight font-extrabold web-title">
@@ -30,9 +38,9 @@ export default function Home() {
           
 
 
-          <div className=" flex py-6 px-[30px] md:px-0 justify-center">
+          <div className=" flex  py-6 px-[30px] md:px-0 justify-center">
           <video
-              className=""
+              className="rounded-[3rem]"
               src="video/cognihub.mp4"
               poster="/images/mock13.jpg"
               autoPlay
@@ -46,13 +54,13 @@ export default function Home() {
           </div>
 
           <img
-            className="w-[19%] absolute lg:block hidden  md:bottom-[100px]"
+            className="w-[17%] rotated-left absolute lg:block hidden  md:bottom-[30%]"
             src="image/slant.webp"
             alt=""
           />
 
           <img
-            className="absolute rotated w-[19%] lg:block hidden   right-5 md:bottom-[100px]"
+            className="absolute rotated w-[19%] lg:block hidden   right-5 md:bottom-[30%]"
             src="image/slant2.webp"
             alt=""
           />
@@ -61,7 +69,10 @@ export default function Home() {
 
         <div className="flex lg:flex-row text-center flex-col py-6 md:py-5 justify-between md:px-[100px] px-[30px] gap-[76px]">
           <div>
-            <img alt="image1" src="" />
+            <div className="flex justify-center " >
+            <img className="size-[80px]" alt="" src="icon/log2.png" />
+            </div>
+           
             <p className="md:text-[30px] text-[18px] lights">Real-Time Data</p>
             <p className="paragraphs">
               Provide users with a comprehensive dashboard powered by
@@ -69,7 +80,10 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <img alt="image1" src="" />
+            <div className="flex justify-center">
+            <img  className="size-[80px]" alt="image1" src="icon/log1.png" />
+            </div>
+      
             <p className="md:text-[30px] text-[18px] lights">
               Smart User Predictions
             </p>
@@ -79,7 +93,10 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <img alt="image1" src="" />
+            <div className="flex justify-center">
+            <img  className="size-[70px]" alt="image1" src="icon/log3.png" />
+            </div>
+         
             <p className="md:text-[30px] text-[18px] lights">
               Smart Scheduling
             </p>
@@ -89,6 +106,10 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+
+
+    
 
         <div className="lg:px-[40px] px-[17px]">
           <div className="bg-black rounded-[2rem] lg:rounded-[5rem] text-white py-[40px] lg:py-[90px] px-[15px] lg:px-[65px]">
@@ -102,7 +123,7 @@ export default function Home() {
                   key={item.id}
                   className="bg-[#181818] rounded-[22px] md:rounded-4xl p-4 flex flex-col justify-start"
                 >
-                  <img className="pb-4" alt="image" src={item.image} />
+                  <img className="pb-4 h-[60px] w-[35px]" alt="image" src={item.image} />
                   <p className="md:text-[30px] text-[18px] pb-3 w-[82%] leading-tight">
                     {item.p}
                   </p>
@@ -210,6 +231,7 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <Scroll/>
         </div>
 
         <div className="lg:px-[40px] px-[10px]">
@@ -231,7 +253,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
 
       <div>
         <div className="flex  pb-[70px] pt-[120px] text-center items-center justify-center ">
