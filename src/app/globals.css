@@ -76,3 +76,7 @@
   font-size: clamp(18px, 8.6vw, 60.82px);
 }
 
+.rotated {
+  transform: rotate(11deg); /* Equal to rotateZ(45deg) */
+  
+}
