@@ -7,7 +7,7 @@ const Page = () => {
         <div className="pt-5">
              <div className="lg:px-[86px] px-[30px] pt-5  text-center">
         <div className="leading-tight uppercase font-extrabold web-title">
-        frequently <span>asked</span> questions
+        frequently <span className="text-[#5f5f5f]">asked</span> questions
         </div>
         <div className="flex justify-center">
           <div className="md:w-[60%] md:py-0 py-2 paragraphs">

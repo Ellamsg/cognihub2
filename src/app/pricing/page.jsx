@@ -6,7 +6,7 @@ const Page = () => {
     <div>
       <div className="lg:px-[86px] px-[30px] pt-5  text-center">
         <div className="leading-tight uppercase font-extrabold web-title">
-          Flexible Pricing <span>Options</span>
+          Flexible Pricing <span className="text-[#5f5f5f]">Options</span>
         </div>
         <div className="flex justify-center">
           <div className="md:w-[60%] md:py-0 py-2 paragraphs">

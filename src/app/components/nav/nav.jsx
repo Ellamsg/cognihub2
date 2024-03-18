@@ -154,7 +154,10 @@ const Nav = () => {
                 <Link href="/feature">  <div className="btn-nav paragraphs"><p>Feature</p></div></Link>
                 <Link href="/Faq-page">            <div className="btn-nav paragraphs"><p>FAQ</p></div></Link>
                 <Link href="/pricing"> <div className="btn-nav paragraphs"><p>Pricing</p></div></Link>
-                <Link href="/feature">           <div className="btn-nav2"><p>Get the template</p></div></Link>
+                <Link href="/feature"><div className="btn-nav2  gap-1 items-center justify-between flex  shadow"><p>Get the template</p>
+                
+                <img className="size-[20px]" src="icon/gaze.png" alt=""/>
+                </div></Link>
           
             </div>
        
@@ -205,7 +208,10 @@ const Nav = () => {
                     </motion.div>
                   </motion.li>
                 ))}
-                 <div className="btn-nav2"><p>Get the template</p></div>
+                 <div className="btn-nav2 items-center gap-1 justify-center flex shadow"><p>Get the template</p>
+                 <img className="size-[20px]" src="icon/gaze.png" alt=""/>
+                 
+                 </div>
               </motion.ul>
 
            
