@@ -46,16 +46,16 @@
 
 .try-btn{
 
-  @apply flex justify-center items-center border-2 w-[50%] rounded-4xl px-3 border-black py-[12px];
+  @apply flex justify-between items-center border-2 md:w-[30%] w-[50%] lg:w-[50%] rounded-4xl px-3 border-black py-[12px];
 }
 
 .try-btn2{
 
-  @apply flex items-center justify-between  w-[50%] rounded-4xl px-3 bg-orange  py-[12px];
+  @apply flex items-center justify-between md:w-[30%] w-[50%] lg:w-[50%] rounded-4xl px-3 bg-orange  py-[12px];
 }
 
 .footer-divs{
-   @apply  flex justify-center text-center lg:text-start font-semibold flex-col gap-2 text-[15px]
+   @apply  flex justify-center md:justify-start text-center lg:text-start font-semibold flex-col gap-2 text-[15px]
 }
 
 .footer-btn{

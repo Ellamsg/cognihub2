@@ -4,7 +4,7 @@ const Page = () => {
     return ( 
 
 
-        <div>
+        <div className="pt-5">
              <div className="lg:px-[86px] px-[30px] pt-5  text-center">
         <div className="leading-tight uppercase font-extrabold web-title">
         frequently <span>asked</span> questions

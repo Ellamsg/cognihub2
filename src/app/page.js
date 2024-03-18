@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 
 import Image from "next/image";
 import items from "./components/Workdata";
@@ -8,21 +7,28 @@ import Pricinglist from "./components/pricing/pricinglist";
 import Scroll from "./components/scroll/scroll";
 import Testimonial from "./components/testimonials/testimonial";
 
-
 export default function Home() {
-
-  
   return (
     <div>
       <div className="  ">
         <div className="relative  pt-5  text-center">
-
-          <div className=" lg:px-[86px] px-[30px] leading-tight font-extrabold web-title">
+          <div className=" lg:px-[86px] relative px-[30px] leading-tight font-extrabold web-title">
             <h1 className=" uppercase">From</h1>
             <h1 className=" uppercase">
-              <span> Finding</span> Prospects to Converting Them into{" "}
-              <span>Paying </span> Customers
+              <span className="text-[#5f5f5f]"> Finding</span> Prospects to Converting Them into{" "}
+              <span className="text-[#5f5f5f]">Paying </span> Customers
             </h1>
+            <div className=" absolute lg:block hidden w-[12%]  rotated top-[16%] left-[20%] ">
+            <div className="border-orange bg-white w-[100%] border-2 rounded-[30px] px-4 py-2">
+              <p className="text-[16px] text-orange">Discover AI</p>
+            </div>
+            </div>
+            <div className=" absolute w-[14%] lg:block hidden rotated-left top-[56%] right-[16%] ">
+            <div className="border-[blue] bg-white w-[100%] border-2 rounded-[30px] px-3 py-2">
+              <p className="text-[16px]">Automate Outreach</p>
+            </div>
+            </div>
+            
           </div>
 
           <div className="flex lg:px-[86px] px-[30px] justify-center">
@@ -36,11 +42,8 @@ export default function Home() {
             </div>
           </div>
 
-          
-
-
           <div className=" flex  py-6 px-[30px] md:px-0 justify-center">
-          <video
+            <video
               className="lg:rounded-[3rem] rounded-[1.4rem]"
               src="video/cognihub.mp4"
               poster="/images/mock13.jpg"
@@ -50,8 +53,6 @@ export default function Home() {
               x5-playsinline=""
               playsinline=""
             />
-
-           
           </div>
 
           <img
@@ -65,15 +66,14 @@ export default function Home() {
             src="image/slant2.webp"
             alt=""
           />
-
         </div>
 
-        <div className="flex lg:flex-row text-center flex-col py-6 md:py-5 justify-between md:px-[100px] px-[30px] gap-[76px]">
+        <div className="flex lg:pb-[130px] lg:flex-row text-center flex-col py-6 md:py-5 justify-between md:px-[100px] px-[30px] gap-[76px]">
           <div>
-            <div className="flex justify-center " >
-            <img className="size-[80px]" alt="" src="icon/log2.png" />
+            <div className="flex justify-center ">
+              <img className="size-[80px]" alt="" src="icon/log2.png" />
             </div>
-           
+
             <p className="md:text-[30px] text-[18px] lights">Real-Time Data</p>
             <p className="paragraphs">
               Provide users with a comprehensive dashboard powered by
@@ -82,9 +82,9 @@ export default function Home() {
           </div>
           <div>
             <div className="flex justify-center">
-            <img  className="size-[80px]" alt="image1" src="icon/log1.png" />
+              <img className="size-[80px]" alt="image1" src="icon/log1.png" />
             </div>
-      
+
             <p className="md:text-[30px] text-[18px] lights">
               Smart User Predictions
             </p>
@@ -95,9 +95,9 @@ export default function Home() {
           </div>
           <div>
             <div className="flex justify-center">
-            <img  className="size-[70px]" alt="image1" src="icon/log3.png" />
+              <img className="size-[70px]" alt="image1" src="icon/log3.png" />
             </div>
-         
+
             <p className="md:text-[30px] text-[18px] lights">
               Smart Scheduling
             </p>
@@ -107,10 +107,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-
-
-
-    
 
         <div className="lg:px-[40px] px-[17px]">
           <div className="bg-black rounded-[2rem] lg:rounded-[5rem] text-white py-[40px] lg:py-[90px] px-[15px] lg:px-[65px]">
@@ -124,7 +120,14 @@ export default function Home() {
                   key={item.id}
                   className="bg-[#181818] rounded-[22px] md:rounded-4xl p-4 flex flex-col justify-start"
                 >
-                  <img className="pb-4 h-[60px] w-[35px]" alt="image" src={item.image} />
+                  <div className="border-[2px] border-[#5f5f5f] mb-4  flex justify-center items-center rounded-[16px]  size-[60px]">
+                    <img
+                      className=" h-[40px]  w-[35px]"
+                      alt="image"
+                      src={item.image}
+                    />
+                  </div>
+
                   <p className="md:text-[30px] text-[18px] pb-3 w-[82%] leading-tight">
                     {item.p}
                   </p>
@@ -139,7 +142,7 @@ export default function Home() {
           <div className="text-center py-[70px] lg:py-[120px]">
             <div className="px-[25px]">
               <p className="uppercase font-extrabold  web-title2">
-                Discover OUr Feature Set
+                Discover <span className="text-[#5f5f5f]">OUr </span>Feature Set
               </p>
 
               <div className="flex flex-col items-center justify-center">
@@ -232,7 +235,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <Scroll/>
+          <Scroll />
         </div>
 
         <div className="lg:px-[40px] px-[10px]">
@@ -260,7 +263,7 @@ export default function Home() {
         <div className="flex  pb-[70px] pt-[120px] text-center items-center justify-center ">
           <div className="lg:w-[60%] w-[85%]  ">
             <p className="web-title2 uppercase font-extrabold ">
-              Flexible Pricing Options
+              Flexible Pricing <span className="text-[#5f5f5f] ">Options</span>
             </p>
             <p className="paragraphs">
               Navigate through our pricing section to discover the ideal
@@ -273,7 +276,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Testimonial/>
+      <Testimonial />
     </div>
   );
 }

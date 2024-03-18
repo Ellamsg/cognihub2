@@ -4,10 +4,10 @@ import Scroll from "../components/scroll/scroll";
 const Page = () => {
   return (
     <div>
-      <div className="lg:px-[86px] px-[30px] pt-5  text-center">
+      <div className="lg:px-[86px]  relative px-[30px] lg:pt-[90px]  text-center">
         <div className="leading-tight font-extrabold web-title">
           <h1 className=" uppercase">
-            Discover <span>OUr</span> Feature Set
+            Discover <span className="text-[#5f5f5f]">OUr</span> Feature Set
           </h1>
         </div>
         <div className="flex justify-center">
@@ -19,6 +19,11 @@ const Page = () => {
             </p>
           </div>
         </div>
+        <div className=" absolute w-[14%] lg:block hidden  rotated-left top-[15%] right-[30%] ">
+            <div className="border-orange rounded-[30px] bg-white text-orange w-[100%] border-2   py-2">
+              <p className="text-[16px]">Productivity</p>
+            </div>
+            </div>
       
       </div>
 
@@ -26,34 +31,45 @@ const Page = () => {
         <img className="md:w-[70%]" src="image/laptop.webp" alt="screen"/>
       </div>
 
-      <div className="flex lg:flex-row text-center flex-col py-6 md:py-[100px] justify-between md:px-[100px] px-[30px] gap-[76px]">
-        <div>
-          <img alt="image1" src="" />
-          <p className="md:text-[30px] text-[18px] lights">Real-Time Data</p>
-          <p className="paragraphs">
-            Provide users with a comprehensive dashboard powered by AI-generated
-            insights.
-          </p>
+      <div className="flex lg:flex-row text-center flex-col py-6 md:py-5 justify-between md:px-[100px] px-[30px] gap-[76px]">
+          <div>
+            <div className="flex justify-center ">
+              <img className="size-[80px]" alt="" src="icon/log2.png" />
+            </div>
+
+            <p className="md:text-[30px] text-[18px] lights">Real-Time Data</p>
+            <p className="paragraphs">
+              Provide users with a comprehensive dashboard powered by
+              AI-generated insights.
+            </p>
+          </div>
+          <div>
+            <div className="flex justify-center">
+              <img className="size-[80px]" alt="image1" src="icon/log1.png" />
+            </div>
+
+            <p className="md:text-[30px] text-[18px] lights">
+              Smart User Predictions
+            </p>
+            <p className="paragraphs">
+              Develop AI models that predict the potential success of email
+              campaigns for specific user segments.
+            </p>
+          </div>
+          <div>
+            <div className="flex justify-center">
+              <img className="size-[70px]" alt="image1" src="icon/log3.png" />
+            </div>
+
+            <p className="md:text-[30px] text-[18px] lights">
+              Smart Scheduling
+            </p>
+            <p className="paragraphs">
+              Utilize AI-driven algorithms to determine the optimal timing for
+              sending emails based on recipient behavior patterns.
+            </p>
+          </div>
         </div>
-        <div>
-          <img alt="image1" src="" />
-          <p className="md:text-[30px] text-[18px] lights">
-            Smart User Predictions
-          </p>
-          <p className="paragraphs">
-            Develop AI models that predict the potential success of email
-            campaigns for specific user segments.
-          </p>
-        </div>
-        <div>
-          <img alt="image1" src="" />
-          <p className="md:text-[30px] text-[18px] lights">Smart Scheduling</p>
-          <p className="paragraphs">
-            Utilize AI-driven algorithms to determine the optimal timing for
-            sending emails based on recipient behavior patterns.
-          </p>
-        </div>
-      </div>
       
       <div className="lg:px-[40px] px-[17px]">
         <div className="bg-black rounded-[2rem] lg:rounded-[5rem] text-white py-[40px] lg:py-[90px] px-[15px] lg:px-[65px]">
@@ -62,12 +78,15 @@ const Page = () => {
           </p>
 
           <div className="grid  gap-2 md:grid grid-cols-1 lg:grid-cols-3">
-              {items.map((item) => (
+          {items.map((item) => (
                 <div
                   key={item.id}
                   className="bg-[#181818] rounded-[22px] md:rounded-4xl p-4 flex flex-col justify-start"
                 >
-                  <img className="pb-4 h-[60px] w-[35px]" alt="image" src={item.image} />
+                  <div className="border-[2px] border-[#5f5f5f] mb-4  flex justify-center items-center rounded-[16px]  size-[60px]">
+                  <img className=" h-[40px]  w-[35px]" alt="image" src={item.image} />
+                    </div>
+                 
                   <p className="md:text-[30px] text-[18px] pb-3 w-[82%] leading-tight">
                     {item.p}
                   </p>
