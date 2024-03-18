@@ -8,6 +8,7 @@ import Scroll from "./components/scroll/scroll";
 import Testimonial from "./components/testimonials/testimonial";
 import ScrollZoomVideo from "./components/zoom";
 import AnimatedCard from "./components/Animated";
+import { Fade } from "react-awesome-reveal";
 
 export default function Home() {
   return (
@@ -15,12 +16,16 @@ export default function Home() {
       <div className="  ">
         <div className="relative  pt-5  text-center">
           <div className=" lg:px-[86px] relative px-[30px] leading-tight font-extrabold web-title">
+            <Fade triggerOnce="true" direction="up">
+
+           
             <h1 className=" uppercase">From</h1>
             <h1 className=" uppercase">
               <span className="text-[#5f5f5f]"> Finding</span> Prospects to
               Converting Them into{" "}
               <span className="text-[#5f5f5f]">Paying </span> Customers
             </h1>
+            </Fade>
             <div className=" absolute lg:block hidden w-[12%]  rotated top-[16%] left-[20%] ">
               <div className="border-orange bg-white w-[100%] border-2 rounded-[30px] px-4 py-2">
                 <p className="text-[16px] font-bold text-orange">Discover AI</p>

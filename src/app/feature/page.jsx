@@ -1,14 +1,20 @@
+"use client"
+
 import items from "../components/Workdata";
 import Scroll from "../components/scroll/scroll";
+import { Fade } from "react-awesome-reveal";
 
 const Page = () => {
   return (
     <div>
       <div className="lg:px-[86px]  relative px-[30px] lg:pt-[90px]  text-center">
         <div className="leading-tight font-extrabold web-title">
-          <h1 className=" uppercase">
+            <Fade triggerOnce="true" direction="up" className="">
+            <h1 className=" uppercase">
             Discover <span className="text-[#5f5f5f]">OUr</span> Feature Set
           </h1>
+            </Fade>
+        
         </div>
         <div className="flex justify-center">
           <div className="md:w-[60%] md:py-0 py-2 paragraphs">

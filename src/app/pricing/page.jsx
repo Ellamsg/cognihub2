@@ -1,13 +1,20 @@
+
+"use client"
 import Faqpage from "../components/faqpage";
 import Pricinglist from "../components/pricing/pricinglist";
+import { Fade } from "react-awesome-reveal";
 
 const Page = () => {
   return (
     <div>
       <div className="lg:px-[86px] px-[30px] pt-5  text-center">
+        <Fade triggerOnce="true" direction="up">
         <div className="leading-tight uppercase font-extrabold web-title">
-          Flexible Pricing <span className="text-[#5f5f5f]">Options</span>
-        </div>
+
+Flexible Pricing <span className="text-[#5f5f5f]">Options</span>
+</div>
+        </Fade>
+       
         <div className="flex justify-center">
           <div className="md:w-[60%] md:py-0 py-2 paragraphs">
             <p className="paragraphs">

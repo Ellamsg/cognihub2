@@ -39,7 +39,7 @@ const Nav = () => {
       opacity: 0,
       y: "-100%",
       transition: {
-        duration: 0.5,
+        duration: 0.1,
         ease: "easeInOut",
       },
     },
@@ -58,8 +58,8 @@ const Nav = () => {
     opened: {
       y: "0%",
       transition: {
-        delay: 0.15,
-        duration: 1.1,
+        delay: 0.1,
+        duration: 1,
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
@@ -77,7 +77,7 @@ const Nav = () => {
     opened: {
       opacity: 1,
       transition: {
-        delay: 1.2,
+        delay: 1,
       },
     },
     closed: { opacity: 0 },
@@ -87,12 +87,12 @@ const Nav = () => {
     opened: {
       transition: {
         delayChildren: 1,
-        staggerChildren: 0.18,
+        staggerChildren: 0.1,
       },
     },
     closed: {
       transition: {
-        staggerChildren: 0.06,
+        staggerChildren: 0.03,
         staggerDirection: -1,
       },
     },
@@ -103,7 +103,7 @@ const Nav = () => {
       opacity: 1,
       y: "0%",
       transition: {
-        duration: 0.65,
+        duration: 0.1,
         ease: "easeOut",
       },
     },
@@ -111,7 +111,7 @@ const Nav = () => {
       opacity: 0,
       y: "100%",
       transition: {
-        duration: 0.25,
+        duration: 0.15,
         ease: "easeInOut",
       },
     },
@@ -170,19 +170,18 @@ const Nav = () => {
               variants={hideNavItemsVariant}
               onClick={() => setMobileNavOpen(true)}
             >
-             <img className="md:w-[40px] w-[40px] " src="icon/burger.png" alt="there"/>
+             <img className="md:w-[40px] w-[36px] " src="icon/burger.png" alt="there"/>
           
             </motion.div>
           </div>
           
-        
           <motion.div variants={mobileMenuVariant} className="mobile-menu md:hidden px-3 h-[100vh] md:px-[70px] p-4 bg-[#f2f1f1] ">
             <motion.button
               className="z-[50] "
               variants={fadeInVariant}
               onClick={() => setMobileNavOpen(false)}
             >
-                <img className="md:w-[40px] w-[40px] " src="icon/burger.png" alt="there"/>
+                <img className="size-[25px] " src="icon/close.png" alt="there"/>
          
             </motion.button>
             <div className="">
