@@ -161,7 +161,7 @@ const Nav = () => {
          
          
           </div>
-          <div className="menu-container lg:hidden  cursor-pointer ">
+          <div className="menu-container md:hidden  cursor-pointer ">
             <motion.div
               className=""
               variants={hideNavItemsVariant}
@@ -173,7 +173,7 @@ const Nav = () => {
           </div>
           
         
-          <motion.div variants={mobileMenuVariant} className="mobile-menu lg:hidden px-3 h-[100vh] md:px-[70px] p-4 bg-[#f2f1f1] ">
+          <motion.div variants={mobileMenuVariant} className="mobile-menu md:hidden px-3 h-[100vh] md:px-[70px] p-4 bg-[#f2f1f1] ">
             <motion.button
               className="z-[50] "
               variants={fadeInVariant}

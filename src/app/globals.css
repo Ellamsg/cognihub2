@@ -7,94 +7,77 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-.lights{
 
-  @apply font-bold
+
+.lights {
+  @apply font-bold;
 }
 
-.paragraphs{
-
-  @apply text-[15px] md:text-[17px] font-medium text-[#5f5f5f]
+.paragraphs {
+  @apply text-[15px] md:text-[17px] font-medium text-[#5f5f5f];
 }
 
-.paragraphs2{
-
-  @apply text-[15px] lg:text-[21px] md:text-[17px] font-medium 
+.paragraphs2 {
+  @apply text-[15px] lg:text-[21px] md:text-[17px] font-medium;
 }
 
-
-.paragraphs3{
-
-  @apply text-[#5f5f5f] text-[14px] lg:text-[16px] md:text-[15px] font-medium 
+.paragraphs3 {
+  @apply text-[#5f5f5f] text-[14px] lg:text-[16px] md:text-[15px] font-medium;
 }
 
-
-
-.card{
-
-  @apply rounded-[1.3rem] md:rounded-[2.5rem] pb-5 py-3 px-[32px] md:px-[24px]
+.card {
+  @apply rounded-[1.3rem] md:rounded-[2.5rem] pb-5 py-3 px-[32px] md:px-[24px];
 }
 
-.card2{
-
-  @apply p-[25px] md:p-[40px] rounded-[2rem]
+.card2 {
+  @apply p-[25px] md:p-[40px] rounded-[2rem];
 }
-.card2-list{
-
-  @apply pt-5 text-[17px] flex flex-col gap-[9px]
+.card2-list {
+  @apply pt-5 text-[17px] flex flex-col gap-[9px];
 }
 
-.try-btn{
-
+.try-btn {
   @apply flex justify-between items-center border-2 md:w-[30%] w-[50%] lg:w-[50%] rounded-4xl px-3 border-black py-[12px];
 }
 
-.try-btn2{
-
+.try-btn2 {
   @apply flex items-center justify-between md:w-[30%] w-[50%] lg:w-[50%] rounded-4xl px-3 bg-orange  py-[12px];
 }
 
-.footer-divs{
-   @apply  flex justify-center md:justify-start text-center lg:text-start font-semibold flex-col gap-2 text-[15px]
+.footer-divs {
+  @apply flex lg:items-start items-center justify-center md:justify-start text-center lg:text-start font-semibold flex-col gap-2 text-[15px];
 }
 
-.footer-btn{
-
- @apply  lg:w-auto rounded-4xl border-[0.3px] hover:text-white text-center px-4 py-1 hover:bg-black border-black
+.footer-btn {
+  @apply w-[50%] md:w-[30%] lg:w-[100%] rounded-4xl border-[0.3px] hover:text-white text-center px-4 py-1 hover:bg-black border-black;
 }
 
- 
 .hub {
-  font-size: clamp(100px, 20vw, 210px);
-}
-@media (max-width: 890px) {
-  .hub {
-    font-size: clamp(50px, 17vw, 160px);  width: 100%;
-  
-  }
-  
+  font-size: clamp(50px, 15vw, 410px);
 }
 
-.web-title{
+.text-clamp {
+  font-size: clamp(13px, 7vw, 15px);
+}
+
+.web-title {
   font-size: clamp(18px, 9.7vw, 108.8px);
 }
 
-.web-title2{
+.web-title2 {
   font-size: clamp(18px, 8.6vw, 60.82px);
 }
 
 .rotated {
   transform: rotate(11deg); /* Equal to rotateZ(45deg) */
-  
 }
 .rotated-left {
   transform: rotate(-11deg); /* Equal to rotateZ(45deg) */
-  
 }
 
-
-
-
+.rotated-left2 {
+  transform: rotate(-7deg); /* Equal to rotateZ(45deg) */
+}
 
 .scroller__inner {
   padding-block: 1rem;
@@ -146,8 +129,6 @@
 
 /* general styles */
 
-
-
 .tag-list {
   margin: 0;
   padding-inline: 0;
@@ -165,7 +146,6 @@
 .test {
   background: red !important;
 }
-.move img{
-
-  @apply size-[70px]
+.move img {
+  @apply size-[70px];
 }

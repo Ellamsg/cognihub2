@@ -2,10 +2,10 @@ const Footer = () => {
   return (
     <div className="lg:px-[100px] bg-[#f2f1f1] px-[30px] lg:pt-[100px]">
 
-      <div className="bg-[blue] flex justify-between my-6 rounded-[1.2rem] md:rounded-[2.5rem] ">
-        <p className="md:text-[3rem] text-[1.5rem]  text-white p-4 ">Get early access</p>
-        <div>
-          <img className="size-[50px]" src="icon/arrow-up.png" alt=""/>
+      <div className="bg-[blue] py-5 lg:py-4 px-4 flex justify-between my-6 rounded-[1.2rem] md:rounded-[2.5rem] ">
+        <p className="md:text-[3rem] text-[1.5rem]  text-white ">Get early access</p>
+        <div className=" flex items-center justify-center">
+          <img className="md:size-[50px] size-[40px] " src="icon/arrow-up.png" alt=""/>
         </div>
       </div>
 
@@ -35,17 +35,17 @@ const Footer = () => {
             <p>404 page</p>
             <p>Help</p>
           </div>
-          <div className="footer-divs md:pb-0 pb-6 ">
-         <div className="footer-btn"><p > Twitter</p></div>   
-         <div className="footer-btn"><p >Facebook</p></div>   
-          <div className="footer-btn"><p >Youtube</p></div>  
-          <div className="footer-btn"><p >Instagram</p></div>  
+          <div className="footer-divs  md:pb-0 pb-6 ">
+         <button className="footer-btn"><p > Twitter</p></button>   
+         <button className="footer-btn"><p >Facebook</p></button>   
+          <button className="footer-btn"><p >Youtube</p></button>  
+          <button className="footer-btn"><p >Instagram</p></button>  
           </div>
         </div>
       </div>
 
       <div>
-        <p className="uppercase md:block  font-extrabold lg:pt-[230px] hub">Cogni Hub</p>
+        <p className="uppercase md:block hidden font-extrabold lg:pt-[230px] hub">CogniHub</p>
       </div>
     </div>
   );

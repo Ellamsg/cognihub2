@@ -6,6 +6,7 @@ import FAQ from "./components/faq";
 import Pricinglist from "./components/pricing/pricinglist";
 import Scroll from "./components/scroll/scroll";
 import Testimonial from "./components/testimonials/testimonial";
+import ScrollZoomVideo from "./components/zoom";
 
 export default function Home() {
   return (
@@ -15,20 +16,20 @@ export default function Home() {
           <div className=" lg:px-[86px] relative px-[30px] leading-tight font-extrabold web-title">
             <h1 className=" uppercase">From</h1>
             <h1 className=" uppercase">
-              <span className="text-[#5f5f5f]"> Finding</span> Prospects to Converting Them into{" "}
+              <span className="text-[#5f5f5f]"> Finding</span> Prospects to
+              Converting Them into{" "}
               <span className="text-[#5f5f5f]">Paying </span> Customers
             </h1>
             <div className=" absolute lg:block hidden w-[12%]  rotated top-[16%] left-[20%] ">
-            <div className="border-orange bg-white w-[100%] border-2 rounded-[30px] px-4 py-2">
-              <p className="text-[16px] text-orange">Discover AI</p>
+              <div className="border-orange bg-white w-[100%] border-2 rounded-[30px] px-4 py-2">
+                <p className="text-[16px] font-bold text-orange">Discover AI</p>
+              </div>
             </div>
+            <div className=" absolute w-[14%] lg:block hidden rotated-left2 top-[56%] right-[16%] ">
+              <div className="border-[blue] bg-white font-bold text-[blue] w-[100%] border-2 rounded-[30px] px-3 py-2">
+                <p className="text-[16px]">Automate Outreach</p>
+              </div>
             </div>
-            <div className=" absolute w-[14%] lg:block hidden rotated-left top-[56%] right-[16%] ">
-            <div className="border-[blue] bg-white w-[100%] border-2 rounded-[30px] px-3 py-2">
-              <p className="text-[16px]">Automate Outreach</p>
-            </div>
-            </div>
-            
           </div>
 
           <div className="flex lg:px-[86px] px-[30px] justify-center">
@@ -43,8 +44,14 @@ export default function Home() {
           </div>
 
           <div className=" flex  py-6 px-[30px] md:px-0 justify-center">
+            <div className=" lg:block hidden">
+              <ScrollZoomVideo
+                videoSrc="/video/cognihub.mp4"
+                posterSrc="/images/mock13.jpg"
+              />
+            </div>
             <video
-              className="lg:rounded-[3rem] rounded-[1.4rem]"
+              className="lg:rounded-[3rem]  lg:hidden rounded-[1.4rem]"
               src="video/cognihub.mp4"
               poster="/images/mock13.jpg"
               autoPlay
@@ -53,7 +60,9 @@ export default function Home() {
               x5-playsinline=""
               playsinline=""
             />
+          
           </div>
+          
 
           <img
             className="w-[17%] rotated-left absolute lg:block hidden  md:bottom-[30%]"
