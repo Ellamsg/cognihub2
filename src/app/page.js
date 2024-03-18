@@ -7,6 +7,7 @@ import Pricinglist from "./components/pricing/pricinglist";
 import Scroll from "./components/scroll/scroll";
 import Testimonial from "./components/testimonials/testimonial";
 import ScrollZoomVideo from "./components/zoom";
+import AnimatedCard from "./components/Animated";
 
 export default function Home() {
   return (
@@ -76,6 +77,8 @@ export default function Home() {
             alt=""
           />
         </div>
+
+       
 
         <div className="flex lg:pb-[130px] lg:flex-row text-center flex-col py-6 md:py-5 justify-between md:px-[100px] px-[30px] gap-[76px]">
           <div>

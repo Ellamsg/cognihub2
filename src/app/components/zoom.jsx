@@ -19,10 +19,12 @@ const ScrollZoomVideo = ({ videoSrc, posterSrc }) => {
     };
   }, []);
 
-  const scale = useTransform(scrollY, [elementTop, elementBottom], [0.5, 1]);
+  // Adjust the initial scale value to start scaling before the video is fully visible
+  const initialScale = 0.5;
+  const scale = useTransform(scrollY, [elementTop, elementBottom], [initialScale, 1]);
 
   return (
-    <div className="flex  py-6 px-[30px] md:px-0 justify-center">
+    <div className="flex py-6 px-[30px] md:px-0 justify-center">
       <motion.video
         id="video-element"
         className="lg:rounded-[3rem] rounded-[1.4rem]"
