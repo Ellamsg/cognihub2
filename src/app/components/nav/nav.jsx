@@ -138,7 +138,7 @@ const Nav = () => {
         >
           <div className="logo-container  ">
             <motion.div >
-              <Link className="z-[2147483647] relative" href="/">
+              <Link className="z-[999] relative" href="/">
                 <div className="flex items-center gap-3">
                   <img className="size-[50px]" src="icon/eye.png" alt="broken-logo" />
                   <p className="lg:text-[24px] font-bold">CogniHub.</p>
