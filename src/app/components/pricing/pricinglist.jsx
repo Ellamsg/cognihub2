@@ -17,11 +17,26 @@ const Pricinglist = () => {
         </div>
 
         <div className="card2-list">
-          <p>Limited access to core features</p>
-          <p>Suitable for small-scale usage</p>
-          <p>Basic customer support</p>
-          <p>Ad-supported experience</p>
-          <p>One request at a time</p>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Limited access to core features</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Suitable for small-scale usage</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Basic customer support</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Ad-supported experience</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>One request at a time</p>
+          </div>
         </div>
       </div>
 
@@ -40,11 +55,27 @@ const Pricinglist = () => {
         </div>
 
         <div className="card2-list text-white">
-          <p>Full access to all core features</p>
-          <p>Ideal for growing businesses</p>
-          <p>Priority customer support</p>
-          <p>Ad-free experience</p>
-          <p>Regular updates and improvements</p>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Full access to all core features</p>
+          </div>
+
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Ideal for growing businesses</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Priority customer support</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Ad-free experience</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Regular updates and improvements</p>
+          </div>
         </div>
       </div>
 
@@ -63,11 +94,26 @@ const Pricinglist = () => {
         </div>
 
         <div className="card2-list ">
-          <p>Solutions for large enterprises</p>
-          <p>Features and customization options</p>
-          <p>Dedicated account manager</p>
-          <p>24/7 premium customer support</p>
-          <p>Comprehensive training and onboarding</p>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Regular updates and improvements</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Features and customization options</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Dedicated account manager</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>24/7 premium customer support</p>
+          </div>
+          <div className="flex gap-2">
+            <img className="size-[20px]" src="icon/check.png" alt="checkmark" />
+            <p>Comprehensive training and onboarding</p>
+          </div>
         </div>
       </div>
     </div>
