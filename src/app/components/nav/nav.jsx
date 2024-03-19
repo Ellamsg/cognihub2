@@ -1,37 +1,29 @@
-"use client";
 
+"use client"
 import { motion } from "framer-motion";
 import Link from "next/link";
 import "./nav.css";
-
 import { useState } from "react";
-
-
 
 const MOBILE_NAV_ITEMS = [
   {
     id: 0,
     navTitle: "Feature",
-    link:"/feature"
-    
+    link: "/feature",
   },
   {
     id: 1,
     navTitle: "FAQ",
-    link:"/Faq-page"
+    link: "/Faq-page",
   },
   {
     id: 2,
     navTitle: "Pricing",
-    link:"/pricing"
+    link: "/pricing",
   },
-  
-
 ];
 
-
 const Nav = () => {
-
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const hideNavItemsVariant = {
@@ -39,7 +31,7 @@ const Nav = () => {
       opacity: 0,
       y: "-100%",
       transition: {
-        duration: 0.1,
+        duration: 0.3, // Faster duration
         ease: "easeInOut",
       },
     },
@@ -47,8 +39,8 @@ const Nav = () => {
       opacity: 1,
       y: "0%",
       transition: {
-        delay: 1.1,
-        duration: 0.5,
+        delay: 0.3, // Adjusted delay
+        duration: 0.3, // Faster duration
         ease: "easeInOut",
       },
     },
@@ -59,15 +51,15 @@ const Nav = () => {
       y: "0%",
       transition: {
         delay: 0.1,
-        duration: 1,
+        duration: 0.5, // Faster duration
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
     closed: {
       y: "-100%",
       transition: {
-        delay: 0.35,
-        duration: 0.63,
+        delay: 0.1,
+        duration: 0.5, // Faster duration
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
@@ -77,7 +69,8 @@ const Nav = () => {
     opened: {
       opacity: 1,
       transition: {
-        delay: 1,
+        delay: 0.3, // Adjusted delay
+        duration: 0.3, // Faster duration
       },
     },
     closed: { opacity: 0 },
@@ -86,7 +79,7 @@ const Nav = () => {
   const ulVariant = {
     opened: {
       transition: {
-        delayChildren: 1,
+        delayChildren: 0.3, // Adjusted delay
         staggerChildren: 0.1,
       },
     },
@@ -101,15 +94,15 @@ const Nav = () => {
   const liVariant = {
     opened: {
       opacity: 1,
-      y: "0%",
+      x: "0%", // Modified from "y" to "x"
       transition: {
-        duration: 0.1,
+        duration: 0.2, // Adjusted duration for a faster animation
         ease: "easeOut",
       },
     },
     closed: {
       opacity: 0,
-      y: "100%",
+      x: "-100%", // Modified from "y" to "x"
       transition: {
         duration: 0.15,
         ease: "easeInOut",
@@ -117,104 +110,86 @@ const Nav = () => {
     },
   };
 
-  const fadeInStart = { opacity: 0 };
-  const fadeInEnd = { opacity: 1 };
-  const fadeInTransition = { duration: 1 };
-
   return (
     <div className="sticky bg-[#f2f1f1] top-0 px-4 z-30">
-     
       <main className=" !w-[100%]  space py-3">
         <motion.nav
           className="flex justify-between w-[100%]   items-center "
           initial="closed"
           animate={mobileNavOpen ? "opened" : "closed"}
         >
-         
-
-         
           <div className="logo-container ">
             <motion.div variants={hideNavItemsVariant}>
-            
               <Link href="/">
                 <div className="flex items-center gap-3">
-                <img
-                  className="size-[50px]"
-                  src="icon/eye.png"
-                  alt="broken-logo"
-                />
-                <p className="lg:text-[24px] font-bold">CogniHub.</p>
+                  <img className="size-[50px]" src="icon/eye.png" alt="broken-logo" />
+                  <p className="lg:text-[24px] font-bold">CogniHub.</p>
                 </div>
-                
               </Link>
             </motion.div>
           </div>
-          <div className="md:block  hidden">
+          <div className="md:block hidden">
             <div className="flex gap-3 ">
-                <Link href="/feature">  <div className="btn-nav paragraphs"><p>Feature</p></div></Link>
-                <Link href="/Faq-page">            <div className="btn-nav paragraphs"><p>FAQ</p></div></Link>
-                <Link href="/pricing"> <div className="btn-nav paragraphs"><p>Pricing</p></div></Link>
-                <Link href="/feature"><div className="btn-nav2  gap-1 items-center justify-between flex  shadow"><p>Get the template</p>
-                
-                <img className="size-[20px]" src="icon/gaze.png" alt=""/>
-                </div></Link>
-          
+              <Link href="/feature">
+                <div className="btn-nav paragraphs">
+                  <p>Feature</p>
+                </div>
+              </Link>
+              <Link href="/Faq-page">
+                <div className="btn-nav paragraphs">
+                  <p>FAQ</p>
+                </div>
+              </Link>
+              <Link href="/pricing">
+                <div className="btn-nav paragraphs">
+                  <p>Pricing</p>
+                </div>
+              </Link>
+              <Link href="/feature">
+                <div className="btn-nav2 gap-1 items-center justify-between flex shadow">
+                  <p>Get the template</p>
+                  <img className="size-[20px]" src="icon/gaze.png" alt="" />
+                </div>
+              </Link>
             </div>
-       
-         
-         
           </div>
-          <div className="menu-container md:hidden  cursor-pointer ">
+          <div className="menu-container md:hidden cursor-pointer ">
             <motion.div
               className=""
               variants={hideNavItemsVariant}
               onClick={() => setMobileNavOpen(true)}
             >
-             <img className="md:w-[40px] w-[36px] " src="icon/burger.png" alt="there"/>
-          
+              <img className="md:w-[40px] w-[36px] " src="icon/burger.png" alt="there" />
             </motion.div>
           </div>
-          
           <motion.div variants={mobileMenuVariant} className="mobile-menu md:hidden px-3 h-[100vh] md:px-[70px] p-4 bg-[#f2f1f1] ">
             <motion.button
               className="z-[50] "
               variants={fadeInVariant}
               onClick={() => setMobileNavOpen(false)}
             >
-                <img className="size-[25px] " src="icon/close.png" alt="there"/>
-         
+              <img className="size-[25px] " src="icon/close.png" alt="there" />
             </motion.button>
             <div className="">
-             
-           
-            <div className="flex mt-3 md:flex-row flex-col gap-4 md:gap-6 justify-between ">
-              <motion.ul className="md:w-[50%] text-center flex flex-col gap-3 " variants={ulVariant}>
-                {MOBILE_NAV_ITEMS.map((navItem) => (
-                  <motion.li whileTap={{ scale: 0.95 }} key={navItem.id}>
-                    <motion.div className=""
-                      onClick={() => setMobileNavOpen(false)}
-                      variants={liVariant}
-                    >
-
-                      <Link href={`${navItem.link}`}>
-                      <div className="btn-nav paragraphs cursor-pointer "> <p>{navItem.navTitle}</p>
-                      
-                     
-                      </div>
-                      </Link>
-                      
-                  
-                    </motion.div>
-                  </motion.li>
-                ))}
-                 <div className="btn-nav2 items-center gap-1 justify-center flex shadow"><p>Get the template</p>
-                 <img className="size-[20px]" src="icon/gaze.png" alt=""/>
-                 
-                 </div>
-              </motion.ul>
-
-           
-            </div>
+              <div className="flex mt-3 md:flex-row flex-col gap-4 md:gap-6 justify-between ">
+                <motion.ul className="md:w-[50%] text-center flex flex-col gap-3 " variants={ulVariant}>
+                  {MOBILE_NAV_ITEMS.map((navItem) => (
+                    <motion.li whileTap={{ scale: 0.95 }} key={navItem.id} variants={liVariant}>
+                      <motion.div className="" onClick={() => setMobileNavOpen(false)}>
+                        <Link href={`${navItem.link}`}>
+                          <div className="btn-nav paragraphs cursor-pointer ">
+                            <p>{navItem.navTitle}</p>
+                          </div>
+                        </Link>
+                      </motion.div>
+                    </motion.li>
+                  ))}
+                  <div className="btn-nav2 items-center gap-1 justify-center flex shadow">
+                    <p>Get the template</p>
+                    <img className="size-[20px]" src="icon/gaze.png" alt="" />
+                  </div>
+                </motion.ul>
+              </div>
             </div>
           </motion.div>
         </motion.nav>

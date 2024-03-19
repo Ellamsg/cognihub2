@@ -8,7 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
 .lights {
   @apply font-bold;
 }
@@ -39,8 +38,6 @@
 .try-btn {
   @apply flex justify-between items-center border-2 md:w-[30%] w-[50%] lg:w-[50%] rounded-4xl px-3 border-black py-[12px];
 }
-
-
 
 .try-btn2 {
   @apply flex items-center justify-between md:w-[30%] w-[50%] lg:w-[50%] rounded-4xl px-3 bg-orange  py-[12px];
