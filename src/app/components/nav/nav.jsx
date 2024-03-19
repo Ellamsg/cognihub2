@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import "./nav.css";
@@ -137,10 +136,14 @@ const Nav = () => {
           animate={mobileNavOpen ? "opened" : "closed"}
         >
           <div className="logo-container  ">
-            <motion.div >
-              <Link className="z-[999] relative" href="/">
+            <motion.div>
+              <Link className=" z-50 relative " href="/">
                 <div className="flex items-center gap-3">
-                  <img className="size-[50px]" src="icon/eye.png" alt="broken-logo" />
+                  <img
+                    className="size-[50px]"
+                    src="icon/eye.png"
+                    alt="broken-logo"
+                  />
                   <p className="lg:text-[24px] font-bold">CogniHub.</p>
                 </div>
               </Link>
@@ -172,15 +175,18 @@ const Nav = () => {
             </div>
           </div>
           <div className="menu-container md:hidden cursor-pointer ">
-            <motion.div
-              className=""
-              
-              onClick={() => setMobileNavOpen(true)}
-            >
-              <img className="md:w-[40px] w-[36px] " src="icon/burger.png" alt="open" />
+            <motion.div className="" onClick={() => setMobileNavOpen(true)}>
+              <img
+                className="md:w-[40px] w-[36px] "
+                src="icon/burger.png"
+                alt="open"
+              />
             </motion.div>
           </div>
-          <motion.div variants={mobileMenuVariant} className="mobile-menu md:hidden px-3 h-[100vh] md:px-[70px] p-4 bg-[#f2f1f1] ">
+          <motion.div
+            variants={mobileMenuVariant}
+            className="mobile-menu md:hidden px-3 h-[100vh] md:px-[70px] p-4 bg-[#f2f1f1] "
+          >
             <motion.button
               className="z-[50] "
               variants={fadeInVariant}
@@ -190,10 +196,20 @@ const Nav = () => {
             </motion.button>
             <div className="">
               <div className="flex mt-3 md:flex-row flex-col gap-4 md:gap-6 justify-between ">
-                <motion.ul className="md:w-[50%] pt-6  text-center flex flex-col gap-3 " variants={ulVariant}>
+                <motion.ul
+                  className="md:w-[50%] pt-6  text-center flex flex-col gap-3 "
+                  variants={ulVariant}
+                >
                   {MOBILE_NAV_ITEMS.map((navItem) => (
-                    <motion.li whileTap={{ scale: 0.95 }} key={navItem.id} variants={liVariant}>
-                      <motion.div className="" onClick={() => setMobileNavOpen(false)}>
+                    <motion.li
+                      whileTap={{ scale: 0.95 }}
+                      key={navItem.id}
+                      variants={liVariant}
+                    >
+                      <motion.div
+                        className=""
+                        onClick={() => setMobileNavOpen(false)}
+                      >
                         <Link href={`${navItem.link}`}>
                           <div className="btn-nav paragraphs cursor-pointer ">
                             <p>{navItem.navTitle}</p>
