@@ -185,7 +185,7 @@ const Nav = () => {
           </div>
           <motion.div
             variants={mobileMenuVariant}
-            className="mobile-menu md:hidden px-3 h-[100vh] md:px-[70px] p-4 bg-[#f2f1f1] "
+            className="mobile-menu  md:hidden px-3 h-[100vh] md:px-[70px] p-4 bg-[#f2f1f1] "
           >
             <motion.button
               className="z-[50] "
