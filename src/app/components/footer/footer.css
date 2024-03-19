@@ -1,0 +1,29 @@
+.footer-button {
+    background: linear-gradient(to bottom, transparent 50%, blue 50%);
+    background-size: 100% 200%; 
+    background-position: bottom;
+    transition: background-position 0.5s, background-color 0.5s; /* Added background-color transition */
+    color: white; /* Added color to ensure text is visible */
+    padding: 10px 20px; /* Added padding for better appearance */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.footer-button:hover {
+    background-position: top;
+    background-color: rgb(232, 86, 33); /* Change background color on hover */
+}
+
+
+.hover-imgs {
+    display: none;
+  }
+  
+  .footer-button:hover .hover-imgs {
+    display: block;
+  }
+  
+  .footer-button:hover img {
+    display: none;
+  }
+  

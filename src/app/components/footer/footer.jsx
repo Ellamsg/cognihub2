@@ -1,13 +1,18 @@
+
+import "./footer.css";
+
+
 const Footer = () => {
   return (
     <div className="lg:px-[100px] bg-[#f2f1f1] px-[30px] lg:pt-[100px]">
+<div class="footer-button click-btn py-5 lg:py-4 px-4 flex justify-between my-6 rounded-[1.2rem] md:rounded-[2.5rem]">
+  <p class="md:text-[3rem] text-[1.5rem] text-white">Get early access</p>
+  <div class="flex items-center justify-center">
+    <img class="md:size-[50px] size-[40px]" src="icon/arrow-up.png" alt="Up Arrow" />
+    <img class="md:size-[50px] hover-imgs size-[40px]" src="icon/arrow2.png" alt="Up Arrow" />
+  </div>
+</div>
 
-      <div className="bg-[blue] py-5 lg:py-4 px-4 flex justify-between my-6 rounded-[1.2rem] md:rounded-[2.5rem] ">
-        <p className="md:text-[3rem] text-[1.5rem]  text-white ">Get early access</p>
-        <div className=" flex items-center justify-center">
-          <img className="md:size-[50px] size-[40px] " src="icon/arrow-up.png" alt=""/>
-        </div>
-      </div>
 
       <div className="flex   justify-center lg:justify-start  flex-col py-5">
         <div className="lg:w-[50%] lg:pb-0 pb-4">
