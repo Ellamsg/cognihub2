@@ -110,6 +110,24 @@ const Nav = () => {
     },
   };
 
+  const getTemplateVariant = {
+    opened: {
+      scaleX: [0, 1],
+      transition: {
+        delay: 0.8, // Adjusted delay
+        duration: 0.5, // Slower duration for scaling
+        ease: "easeInOut",
+      },
+    },
+    closed: {
+      scaleX: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
     <div className="sticky bg-[#f2f1f1] top-0 px-4 z-30">
       <main className=" !w-[100%]  space py-3">
@@ -184,10 +202,12 @@ const Nav = () => {
                       </motion.div>
                     </motion.li>
                   ))}
-                  <div className="btn-nav2 items-center gap-1 justify-center flex shadow">
-                    <p>Get the template</p>
-                    <img className="size-[20px]" src="icon/gaze.png" alt="" />
-                  </div>
+                  <motion.div variants={liVariant}>
+                    <div className="btn-nav2 items-center gap-1 justify-center flex shadow">
+                      <p>Get the template</p>
+                      <img className="size-[20px]" src="icon/gaze.png" alt="" />
+                    </div>
+                  </motion.div>
                 </motion.ul>
               </div>
             </div>
