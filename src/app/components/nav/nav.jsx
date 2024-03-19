@@ -128,7 +128,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="sticky bg-[#f2f1f1] top-0 px-4 z-30">
+    <div className="sticky bg-[#f2f1f1] top-0 px-4  z-[999] ">
       <main className=" !w-[100%]  space py-3">
         <motion.nav
           className="flex justify-between w-[100%]   items-center "
@@ -137,7 +137,7 @@ const Nav = () => {
         >
           <div className="logo-container  ">
             <motion.div>
-              <Link className=" z-50 relative " href="/">
+              <Link className=" z-[999] absolute top-2 " href="/">
                 <div className="flex items-center gap-3">
                   <img
                     className="size-[50px]"
@@ -187,6 +187,8 @@ const Nav = () => {
             variants={mobileMenuVariant}
             className="mobile-menu  md:hidden px-3 h-[100vh] md:px-[70px] p-4 bg-[#f2f1f1] "
           >
+
+
             <motion.button
               className="z-[50] "
               variants={fadeInVariant}
